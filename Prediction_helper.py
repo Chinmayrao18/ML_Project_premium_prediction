@@ -1,10 +1,18 @@
 import pandas as pd
+
+
+import os
 from joblib import load
 
-model_rest = load(r"C:\Users\chinm\ML_Project_premium_prediction\ML APP\model_rest.joblib")
-model_young=load(r"C:\Users\chinm\ML_Project_premium_prediction\ML APP\model_young.joblib")
-scaler_rest=load(r"C:\Users\chinm\ML_Project_premium_prediction\ML APP\scaler_rest.joblib")
-scaler_young=load(r"C:\Users\chinm\ML_Project_premium_prediction\ML APP\scaler_young.joblib")
+# Define base path
+BASE_DIR = os.path.dirname(__file__)  # current file's directory
+
+# Relative paths to model and scaler files
+model_rest = load(os.path.join(BASE_DIR, "ML APP", "model_rest.joblib"))
+model_young = load(os.path.join(BASE_DIR, "ML APP", "model_young.joblib"))
+scaler_rest = load(os.path.join(BASE_DIR, "ML APP", "scaler_rest.joblib"))
+scaler_young = load(os.path.join(BASE_DIR, "ML APP", "scaler_young.joblib"))
+
 
 
 def calculate_normalized_risk(medical_history):

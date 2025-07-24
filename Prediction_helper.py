@@ -1,10 +1,10 @@
 import pandas as pd
 from joblib import load
 
-model_rest = load(r"C:\ML\ML Premium Pred\project_1_datacleaning_&_EDA_resources (1)\ML APP\model_rest.joblib")
-model_young=load(r"C:\ML\ML Premium Pred\project_1_datacleaning_&_EDA_resources (1)\ML APP\model_young.joblib")
-scaler_rest=load(r"C:\ML\ML Premium Pred\project_1_datacleaning_&_EDA_resources (1)\ML APP\scaler_rest.joblib")
-scaler_young=load(r"C:\ML\ML Premium Pred\project_1_datacleaning_&_EDA_resources (1)\ML APP\scaler_young.joblib")
+model_rest = load(r"C:\Users\chinm\ML_Project_premium_prediction\ML APP\model_rest.joblib")
+model_young=load(r"C:\Users\chinm\ML_Project_premium_prediction\ML APP\model_young.joblib")
+scaler_rest=load(r"C:\Users\chinm\ML_Project_premium_prediction\ML APP\scaler_rest.joblib")
+scaler_young=load(r"C:\Users\chinm\ML_Project_premium_prediction\ML APP\scaler_young.joblib")
 
 
 def calculate_normalized_risk(medical_history):
